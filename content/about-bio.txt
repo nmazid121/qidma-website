@@ -1,0 +1,88 @@
+Create a modern, clean, and welcoming multi-page website for a non-profit organization named "QIDMA". The design should be professional and trustworthy, primarily using a color palette of green and blue to evoke a sense of community, growth, and reliability.
+
+Global Elements:
+
+Header: A clean navigation bar at the top with the QIDMA logo (placeholder) on the left and links to the following pages: About, Board, Events, Gallery, Donate, and Contact. The "Donate" button should be styled as a primary call-to-action (e.g., with a solid background color).
+
+Footer: A simple footer with the organization's contact info (Email, Google Voice, Instagram link), quick links to key pages, and a copyright notice.
+
+Homepage:
+
+Hero Section: A full-width banner image featuring a diverse group of community members or volunteers. Overlay text with the main heading "QIDMA" and the subheading "Serving with Purpose". Include two buttons: "Donate Now" and "Learn More".
+
+About Us Summary: A section with a brief introduction using the first paragraph of the bio: "QIDMA is a grassroots nonprofit organization... committed to building a more inclusive and empowered Franklin." Include a "Read Our Story" button that links to the full About page.
+
+Upcoming Events Preview: A small, card-based section showcasing 2-3 upcoming events with the event title, date, and a "View Details" link for each, all linking to the main Events Page.
+
+Newsletter Signup: A simple, inviting section with a heading like "Stay Connected" and a form with a single field for an email address and a "Subscribe" button.
+
+Call to Action: A prominent section encouraging donations, with a brief, impactful statement and a clear "Support Our Mission" button linking to the Donation page.
+
+Page 1: About Us
+
+This page should feature the full "About/Bio of Organization" text provided, starting with "Serving with Purpose".
+
+Below the bio, create a "Meet Our Board" section. Display the board members in a grid or row format. Each entry should include a placeholder for a headshot, their name, and their title.
+
+President and Co-Founder - Sara Kharazi Didehvar
+
+Co-Founder- Viq Pervaaz
+
+Vice President- Rana Jawad
+
+Treasurer- Samina Sattar
+
+Communications Lead Officer - Ayeshah Ali
+
+Page 2: Events
+
+A dedicated page to list all upcoming and past events.
+
+Use a clean list or calendar layout. Each event entry should have a title, date, time, a short description, and location.
+
+Page 3: Photo Gallery
+
+A responsive grid layout to display photos from events and community initiatives. Allow images to be clicked to open in a larger lightbox view.
+
+Page 4: Donate
+
+Start with a clear heading: "Support Your Community".
+
+Prominently display that QIDMA is a "Registered 501(c)(3) non-profit organization".
+
+Create distinct sections or cards for donation methods:
+
+Venmo: Placeholder for a Venmo QR code and username.
+
+Zelle: Placeholder for Zelle information (e.g., email or phone number).
+
+Include a clearly visible field or text area for the organization's Tax ID for donors.
+
+End with a heartfelt "Thank you for your generosity!" message.
+
+Page 5: Contact
+
+A simple page with a clear heading like "Get In Touch".
+
+List the contact information:
+
+Email: qidmafranklin@gmail.com
+
+Phone: 732-658-2032
+
+Instagram: @qidmafranklin (make this a clickable link)
+
+Include a simple contact form with fields for Name, Email, Subject, and Message.
+
+
+
+
+
+
+
+
+
+
+
+
+Tools
