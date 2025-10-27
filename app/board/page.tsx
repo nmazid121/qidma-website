@@ -21,19 +21,19 @@ export default function BoardPage() {
       name: "Rana Jawad",
       title: "Vice President",
       initials: "RJ",
-      bio: "Rana oversees strategic planning and program development, ensuring QIDMA's initiatives align with community needs.",
+      bio: "Rana Jawad is the Vice President of QIDMA and serves as the administrator at a local nonprofit organization. With a deep commitment to service, she finds fulfillment in helping others and contributing to her community as an expression of her faith. Rana lives in Franklin Township with her husband and their three children.",
     },
     {
       name: "Samina Sattar",
       title: "Treasurer",
       initials: "SS",
-      bio: "Samina manages QIDMA's financial operations and ensures responsible stewardship of donor contributions.",
+      bio: "Samina Sattar is the Treasurer at QIDMA, and a commissioner on the Franklin Township Human Relations Commission. She is a policy researcher with a focus on workforce development, and is a board member and speaker for the New Jersey Islamic Networks Group. Samina lives in Franklin Township with her husband and two children.",
     },
     {
-      name: "Ayeshah Ali",
+      name: "Ayesha Ali",
       title: "Communications Lead Officer",
       initials: "AA",
-      bio: "Ayeshah leads QIDMA's outreach efforts and manages communications to keep the community informed and engaged.",
+      bio: "Ayesha Ali serves as Communications Secretary at QIDMA and brings a strong background in quality assurance from the pharmaceutical industry, where she oversees clinical trials and research. She also sits on the Franklin Township Library Board and has volunteered extensively in her children's school and other community initiatives. Passionate about service and strengthening her community, Ayesha lives in Franklin Township with her husband and two children."
     },
   ]
 
@@ -60,7 +60,13 @@ export default function BoardPage() {
                     <div className="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6">
                       <Avatar className="h-24 w-24 flex-shrink-0">
                         <AvatarImage
-                          src={`/smiling-woman-curly-brown-hair-headshot.png?height=96&width=96&query=professional headshot of ${member.name}`}
+                          src={
+                            member.name === "Ayesha Ali" 
+                              ? "/images/ayesha_ali_profile.png" 
+                              : member.name === "Rana Jawad"
+                              ? "/images/rana_jawad.jpeg"
+                              : `/smiling-woman-curly-brown-hair-headshot.png?height=96&width=96&query=professional headshot of ${member.name}`
+                          }
                         />
                         <AvatarFallback className="text-lg bg-primary text-primary-foreground">
                           {member.initials}

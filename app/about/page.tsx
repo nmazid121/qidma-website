@@ -26,7 +26,7 @@ export default function AboutPage() {
       initials: "SS",
     },
     {
-      name: "Ayeshah Ali",
+      name: "Ayesha Ali",
       title: "Communications Lead Officer",
       initials: "AA",
     },
@@ -103,7 +103,13 @@ export default function AboutPage() {
                   <CardContent className="p-8">
                     <Avatar className="h-24 w-24 mx-auto mb-4">
                       <AvatarImage
-                        src={`/smiling-woman-curly-brown-hair-headshot.png?height=96&width=96&query=professional headshot of ${member.name}`}
+                        src={
+                          member.name === "Ayesha Ali" 
+                            ? "/images/ayesha_ali_profile.png" 
+                            : member.name === "Rana Jawad"
+                            ? "/images/rana_jawad.jpeg"
+                            : `/smiling-woman-curly-brown-hair-headshot.png?height=96&width=96&query=professional headshot of ${member.name}`
+                        }
                       />
                       <AvatarFallback className="text-lg bg-primary text-primary-foreground">
                         {member.initials}
