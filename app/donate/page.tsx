@@ -172,7 +172,7 @@ export default function DonatePage() {
                     <strong>Email:</strong> qidmafranklin@gmail.com
                   </p>
                   <p>
-                    <strong>Phone:</strong> 732-658-2032
+                    <strong>Google Voice:</strong> 732-658-2032
                   </p>
                 </div>
               </CardContent>

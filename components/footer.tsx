@@ -16,7 +16,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>732-658-2032</span>
+                <span>Google Voice: 732-658-2032</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Instagram className="h-4 w-4" />

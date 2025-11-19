@@ -30,10 +30,10 @@ export default function BoardPage() {
       bio: "Samina Sattar is the Treasurer at QIDMA, and a commissioner on the Franklin Township Human Relations Commission. She is a policy researcher with a focus on workforce development, and is a board member and speaker for the New Jersey Islamic Networks Group. Samina lives in Franklin Township with her husband and two children.",
     },
     {
-      name: "Ayesha Ali",
+      name: "Ayeshah Ali",
       title: "Communications Lead Officer",
       initials: "AA",
-      bio: "Ayesha Ali serves as Communications Secretary at QIDMA and brings a strong background in quality assurance from the pharmaceutical industry, where she oversees clinical trials and research. She also sits on the Franklin Township Library Board and has volunteered extensively in her children's school and other community initiatives. Passionate about service and strengthening her community, Ayesha lives in Franklin Township with her husband and two children."
+      bio: "Ayeshah Ali serves as Communications Lead Officer at QIDMA and brings a strong background in quality assurance from the pharmaceutical industry, where she oversees clinical trials and research. She also sits on the Franklin Township Library Board and has volunteered extensively in her children's school and other community initiatives. Passionate about service and strengthening her community, Ayeshah lives in Franklin Township with her husband and two children."
     },
   ]
 
@@ -61,10 +61,12 @@ export default function BoardPage() {
                       <Avatar className="h-24 w-24 flex-shrink-0">
                         <AvatarImage
                           src={
-                            member.name === "Ayesha Ali" 
+                            member.name === "Ayeshah Ali" 
                               ? "/images/ayesha_ali_profile.png" 
                               : member.name === "Rana Jawad"
                               ? "/images/rana_jawad.jpeg"
+                              : member.name === "Samina Sattar"
+                              ? "/images/Samina_Sattar.jpeg"
                               : `/smiling-woman-curly-brown-hair-headshot.png?height=96&width=96&query=professional headshot of ${member.name}`
                           }
                         />

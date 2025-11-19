@@ -18,9 +18,6 @@ export function Header() {
             <Link href="/about" className="text-foreground hover:text-primary transition-colors">
               About
             </Link>
-            <Link href="/board" className="text-foreground hover:text-primary transition-colors">
-              Board
-            </Link>
             <Link href="/events" className="text-foreground hover:text-primary transition-colors">
               Events
             </Link>

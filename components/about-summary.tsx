@@ -11,9 +11,7 @@ export function AboutSummary() {
           <Card className="bg-card">
             <CardContent className="p-8">
               <p className="text-lg text-card-foreground leading-relaxed mb-6">
-                QIDMA is a grassroots nonprofit organization founded by a group of passionate community members who
-                recognized the need for greater support and resources in Franklin. We are committed to building a more
-                inclusive and empowered Franklin.
+                QIDMA is a grassroots nonprofit organization founded by a group of dedicated Franklin township residents. Inspired by the Arabic word "Qidma", meaning "service", the organization is rooted in the belief that strong communities are built through care, connection, and collective support. QIDMA's mission is to meet the diverse needs of every resident—ensuring everyone has the opportunity to grow, thrive, and access essential resources.
               </p>
               <Button asChild variant="outline">
                 <Link href="/about">Read Our Story</Link>

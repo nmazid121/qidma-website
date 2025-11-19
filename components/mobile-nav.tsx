@@ -11,7 +11,6 @@ export function MobileNav() {
 
   const navItems = [
     { href: "/about", label: "About" },
-    { href: "/board", label: "Board" },
     { href: "/events", label: "Events" },
     { href: "/gallery", label: "Gallery" },
     { href: "/contact", label: "Contact" },

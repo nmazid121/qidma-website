@@ -12,34 +12,89 @@ export default function GalleryPage() {
 
   const galleryImages = [
     {
+      src: "/images/events/qidma-event-1.png",
+      alt: "QIDMA Event Photo",
+      title: "QIDMA Community Event",
+    },
+    {
+      src: "/images/events/qidma-event-2.png",
+      alt: "QIDMA Event Photo",
+      title: "QIDMA Community Event",
+    },
+    {
+      src: "/images/events/qidma-event-3.png",
+      alt: "QIDMA Event Photo",
+      title: "QIDMA Community Event",
+    },
+    {
+      src: "/images/events/qidma-event-4.png",
+      alt: "QIDMA Event Photo",
+      title: "QIDMA Community Event",
+    },
+    {
+      src: "/images/events/qidma-event-5.png",
+      alt: "QIDMA Event Photo",
+      title: "QIDMA Community Event",
+    },
+    {
+      src: "/images/events/qidma-event-6.png",
+      alt: "QIDMA Event Photo",
+      title: "QIDMA Community Event",
+    },
+    {
+      src: "/images/events/qidma-event-7.png",
+      alt: "QIDMA Event Photo",
+      title: "QIDMA Community Event",
+    },
+    {
+      src: "/images/events/qidma-event-8.png",
+      alt: "QIDMA Event Photo",
+      title: "QIDMA Community Event",
+    },
+    {
+      src: "/images/events/qidma-event-9.png",
+      alt: "QIDMA Event Photo",
+      title: "QIDMA Community Event",
+    },
+    {
+      src: "/images/events/qidma-event-10.png",
+      alt: "QIDMA Event Photo",
+      title: "QIDMA Community Event",
+    },
+    {
+      src: "/images/events/qidma-event-11.png",
+      alt: "QIDMA Event Photo",
+      title: "QIDMA Community Event",
+    },
+    {
       src: "/food-drive-sorting.png",
       alt: "Community Food Drive",
-      title: "Community Food Drive - February 2025",
+      title: "Community Food Drive - Supporting Families",
     },
     {
       src: "/community-cleanup-volunteers.png",
       alt: "Community Clean-up",
-      title: "Spring Community Clean-up - March 2025",
+      title: "Community Clean-up Volunteers",
     },
     {
       src: "/diverse-families-festival.png",
-      alt: "Cultural Heritage Festival",
-      title: "Cultural Heritage Festival - April 2024",
+      alt: "Community Event",
+      title: "Community Gathering",
     },
     {
       src: "/youth-mentorship.png",
-      alt: "Youth Mentorship Program",
-      title: "Youth Mentorship Program Launch",
+      alt: "Youth Program",
+      title: "Youth Mentorship Program",
     },
     {
       src: "/community-dinner.png",
       alt: "Community Dinner",
-      title: "New Year Community Dinner - January 2025",
+      title: "Community Dinner Event",
     },
     {
       src: "/coat-drive-volunteers.png",
-      alt: "Winter Coat Drive",
-      title: "Winter Coat Drive - December 2024",
+      alt: "Clothing Drive",
+      title: "Clothing Drive at Pine Grove Elementary",
     },
     {
       src: "/community-garden-planting.png",
@@ -48,13 +103,18 @@ export default function GalleryPage() {
     },
     {
       src: "/community-workshop.png",
-      alt: "Educational Workshop",
-      title: "Financial Literacy Workshop",
+      alt: "Community Workshop",
+      title: "Community Workshop - La Cocina",
     },
     {
       src: "/community-event-fun.png",
-      alt: "Family Fun Day",
-      title: "Annual Family Fun Day",
+      alt: "Franklin Day",
+      title: "Franklin Day 2024",
+    },
+    {
+      src: "/diverse-volunteers.png",
+      alt: "Volunteers",
+      title: "QIDMA Volunteers at J. Danielson's Backpack Drive",
     },
   ]
 

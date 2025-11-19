@@ -49,7 +49,7 @@ export default function ContactPage() {
                     </CardContent>
                   </Card>
 
-                  {/* Phone */}
+                  {/* Google Voice */}
                   <Card className="bg-card">
                     <CardContent className="p-6">
                       <div className="flex items-center space-x-4">
@@ -57,7 +57,7 @@ export default function ContactPage() {
                           <Phone className="h-6 w-6 text-primary" />
                         </div>
                         <div>
-                          <h3 className="font-semibold text-card-foreground">Phone</h3>
+                          <h3 className="font-semibold text-card-foreground">Google Voice</h3>
                           <Link
                             href="tel:732-658-2032"
                             className="text-primary hover:text-primary/80 transition-colors"
