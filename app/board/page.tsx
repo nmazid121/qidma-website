@@ -61,11 +61,17 @@ export default function BoardPage() {
                       <Avatar className="h-24 w-24 flex-shrink-0">
                         <AvatarImage
                           src={
-                            member.name === "Ayesha Ali" 
-                              ? "/images/ayesha_ali_profile.png" 
+                            member.name === "Sara Kharazi Didehvar"
+                              ? "/images/sarah_d.jpeg"
+                              : member.name === "Viq Pervaaz"
+                              ? undefined
                               : member.name === "Rana Jawad"
                               ? "/images/rana_jawad.jpeg"
-                              : `/smiling-woman-curly-brown-hair-headshot.png?height=96&width=96&query=professional headshot of ${member.name}`
+                              : member.name === "Samina Sattar"
+                              ? "/images/Samina_Sattar.jpeg"
+                              : member.name === "Ayesha Ali"
+                              ? "/images/ayesha_ali_profile.png"
+                              : undefined
                           }
                         />
                         <AvatarFallback className="text-lg bg-primary text-primary-foreground">

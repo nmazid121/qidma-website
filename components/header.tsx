@@ -27,6 +27,9 @@ export function Header() {
             <Link href="/gallery" className="text-foreground hover:text-primary transition-colors">
               Gallery
             </Link>
+            <Link href="/newsletter" className="text-foreground hover:text-primary transition-colors">
+              Newsletter
+            </Link>
             <Link href="/contact" className="text-foreground hover:text-primary transition-colors">
               Contact
             </Link>

@@ -1,0 +1,46 @@
+{
+  "newsletters": [
+    {
+      "id": 1,
+      "issueNumber": "test",
+      "season": "test",
+      "year": "test",
+      "heroTitle": "THE community ACTION",
+      "tagline": "Laying the groundwork for tomorrow's communities",
+      "featuredArticles": [
+        {
+          "id": 1767640192622,
+          "title": "test",
+          "content": "test",
+          "image": "test",
+          "link": "test",
+          "linkText": "test"
+        }
+      ],
+      "sections": [],
+      "createdAt": "2026-01-05T19:10:00.500Z",
+      "updatedAt": "2026-01-05T19:10:00.500Z"
+    }
+  ],
+  "currentNewsletter": {
+    "id": 1,
+    "issueNumber": "test",
+    "season": "test",
+    "year": "test",
+    "heroTitle": "THE community ACTION",
+    "tagline": "Laying the groundwork for tomorrow's communities",
+    "featuredArticles": [
+      {
+        "id": 1767640192622,
+        "title": "test",
+        "content": "test",
+        "image": "test",
+        "link": "test",
+        "linkText": "test"
+      }
+    ],
+    "sections": [],
+    "createdAt": "2026-01-05T19:10:00.500Z",
+    "updatedAt": "2026-01-05T19:10:00.500Z"
+  }
+}

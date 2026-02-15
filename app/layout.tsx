@@ -21,6 +21,10 @@ export const metadata: Metadata = {
   description:
     "QIDMA is a grassroots nonprofit organization committed to building a more inclusive and empowered Franklin community.",
   generator: "v0.app",
+  icons: {
+    icon: "/images/qidma-logo.png",
+    apple: "/images/qidma-logo.png",
+  },
 }
 
 export default function RootLayout({

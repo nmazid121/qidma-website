@@ -1,62 +1,51 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Lightbox } from "@/components/lightbox"
 import Image from "next/image"
+import { Event, EventImage } from "@/lib/data/types"
 
 export default function GalleryPage() {
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const [galleryImages, setGalleryImages] = useState<Array<{ src: string; alt: string; title: string }>>([])
+  const [loading, setLoading] = useState(true)
 
-  const galleryImages = [
-    {
-      src: "/food-drive-sorting.png",
-      alt: "Community Food Drive",
-      title: "Community Food Drive - February 2025",
-    },
-    {
-      src: "/community-cleanup-volunteers.png",
-      alt: "Community Clean-up",
-      title: "Spring Community Clean-up - March 2025",
-    },
-    {
-      src: "/diverse-families-festival.png",
-      alt: "Cultural Heritage Festival",
-      title: "Cultural Heritage Festival - April 2024",
-    },
-    {
-      src: "/youth-mentorship.png",
-      alt: "Youth Mentorship Program",
-      title: "Youth Mentorship Program Launch",
-    },
-    {
-      src: "/community-dinner.png",
-      alt: "Community Dinner",
-      title: "New Year Community Dinner - January 2025",
-    },
-    {
-      src: "/coat-drive-volunteers.png",
-      alt: "Winter Coat Drive",
-      title: "Winter Coat Drive - December 2024",
-    },
-    {
-      src: "/community-garden-planting.png",
-      alt: "Community Garden",
-      title: "Community Garden Project",
-    },
-    {
-      src: "/community-workshop.png",
-      alt: "Educational Workshop",
-      title: "Financial Literacy Workshop",
-    },
-    {
-      src: "/community-event-fun.png",
-      alt: "Family Fun Day",
-      title: "Annual Family Fun Day",
-    },
-  ]
+  useEffect(() => {
+    fetchEvents()
+  }, [])
+
+  const fetchEvents = async () => {
+    try {
+      const response = await fetch("/api/events")
+      const data = await response.json()
+      
+      // Collect all images from past events with their event titles
+      const images: Array<{ src: string; alt: string; title: string }> = []
+      
+      const allEvents = [...(data.pastEvents || []), ...(data.upcomingEvents || [])]
+      
+      allEvents.forEach((event: Event) => {
+        if (event.images && event.images.length > 0) {
+          event.images.forEach((image: EventImage) => {
+            images.push({
+              src: image.src,
+              alt: image.alt,
+              title: event.title + (event.date ? ` - ${event.date}` : ""),
+            })
+          })
+        }
+      })
+      
+      setGalleryImages(images)
+    } catch (error) {
+      console.error("Failed to fetch events:", error)
+    } finally {
+      setLoading(false)
+    }
+  }
 
   const openLightbox = (index: number) => {
     setCurrentImageIndex(index)
@@ -75,6 +64,21 @@ export default function GalleryPage() {
     setCurrentImageIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length)
   }
 
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-background">
+        <Header />
+        <main className="py-16">
+          <div className="container mx-auto px-4 text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
+            <p className="mt-4 text-muted-foreground">Loading gallery...</p>
+          </div>
+        </main>
+        <Footer />
+      </div>
+    )
+  }
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -90,8 +94,13 @@ export default function GalleryPage() {
           </div>
 
           {/* Gallery Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {galleryImages.map((image, index) => (
+          {galleryImages.length === 0 ? (
+            <div className="text-center py-16">
+              <p className="text-muted-foreground">No photos available yet. Check back soon!</p>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {galleryImages.map((image, index) => (
               <div
                 key={index}
                 className="group relative aspect-[4/3] overflow-hidden rounded-lg bg-muted cursor-pointer transition-transform hover:scale-105"
@@ -110,7 +119,8 @@ export default function GalleryPage() {
                 </div>
               </div>
             ))}
-          </div>
+            </div>
+          )}
 
           {/* Call to Action */}
           <div className="text-center mt-16">

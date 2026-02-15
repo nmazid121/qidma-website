@@ -14,6 +14,7 @@ export function MobileNav() {
     { href: "/board", label: "Board" },
     { href: "/events", label: "Events" },
     { href: "/gallery", label: "Gallery" },
+    { href: "/newsletter", label: "Newsletter" },
     { href: "/contact", label: "Contact" },
   ]
 

@@ -1,0 +1,81 @@
+{
+  "upcomingEvents": [],
+  "pastEvents": [
+    {
+      "id": 5,
+      "title": "J. Danielson's Backpack Drive",
+      "date": "2024",
+      "description": "QIDMA donated 200 backpacks along with snacks and water to support students in need for the school year.",
+      "category": "Community Service",
+      "images": [
+        {
+          "src": "/jdaniel.jpeg",
+          "alt": "J. Danielson's Backpack Drive - backpacks on tables"
+        },
+        {
+          "src": "/jdaniel_2.jpeg",
+          "alt": "J. Danielson's Backpack Drive - volunteers organizing backpacks"
+        },
+        {
+          "src": "/jdaniel_3.jpeg",
+          "alt": "J. Danielson's Backpack Drive - snacks and water distribution"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Clothing Drive at Pine Grove Elementary",
+      "date": "2024",
+      "description": "Organized a clothing drive to collect and distribute clothing items to families in need.",
+      "category": "Community Service",
+      "images": [
+        {
+          "src": "/pine_grove.jpeg",
+          "alt": "Clothing Drive at Pine Grove Elementary - clothing collection"
+        },
+        {
+          "src": "/pine_grove_2.jpeg",
+          "alt": "Clothing Drive at Pine Grove Elementary - volunteers organizing donations"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "La Cocina BBQ by QIDMA",
+      "date": "2024",
+      "description": "Community BBQ event bringing together volunteers and community members for food and fellowship.",
+      "category": "Community Building",
+      "images": [
+        {
+          "src": "/images/la_cocina.jpeg",
+          "alt": "La Cocina BBQ by QIDMA - community event"
+        },
+        {
+          "src": "/images/la_cocina_2.jpeg",
+          "alt": "La Cocina BBQ by QIDMA - food preparation"
+        },
+        {
+          "src": "/images/la_cocina_3.jpeg",
+          "alt": "La Cocina BBQ by QIDMA - community gathering"
+        },
+        {
+          "src": "/images/la_cocina_4.jpeg",
+          "alt": "La Cocina BBQ by QIDMA - volunteers and attendees"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Franklin Day 2024",
+      "date": "2024",
+      "description": "QIDMA participated in Franklin Day with a booth featuring activities, snacks, and community engagement.",
+      "category": "Community Building",
+      "images": [
+        {
+          "src": "/franklin.jpeg",
+          "alt": "Franklin Day 2024 - QIDMA booth and community engagement"
+        }
+      ]
+    }
+  ]
+}
