@@ -26,7 +26,7 @@ export default function AboutPage() {
       initials: "SS",
     },
     {
-      name: "Ayesha Ali",
+      name: "Ayeshah Ali",
       title: "Communications Lead Officer",
       initials: "AA",
     },
@@ -51,36 +51,11 @@ export default function AboutPage() {
                   <h2 className="text-2xl font-semibold mb-6 text-primary">Serving with Purpose</h2>
 
                   <p className="mb-6 leading-relaxed">
-                    QIDMA is a grassroots nonprofit organization founded by a group of passionate community members who
-                    recognized the need for greater support and resources in Franklin. We are committed to building a
-                    more inclusive and empowered Franklin.
+                    QIDMA is a grassroots nonprofit organization founded by a group of dedicated Franklin township residents. Inspired by the Arabic word "Qidma", meaning "service", the organization is rooted in the belief that strong communities are built through care, connection, and collective support. QIDMA's mission is to meet the diverse needs of every resident—ensuring everyone has the opportunity to grow, thrive, and access essential resources. Through local initiatives and compassionate outreach, QIDMA is committed to building a more inclusive and empowered Franklin.
                   </p>
 
                   <p className="mb-6 leading-relaxed">
-                    Our mission is rooted in the belief that every individual deserves access to opportunities that
-                    foster personal growth, community connection, and social mobility. Through our various programs and
-                    initiatives, we work to address systemic barriers and create pathways for success for all community
-                    members, regardless of their background or circumstances.
-                  </p>
-
-                  <p className="mb-6 leading-relaxed">
-                    At QIDMA, we understand that meaningful change happens when communities come together. That's why we
-                    focus on collaborative approaches that bring together diverse voices, perspectives, and resources.
-                    Our programs are designed not just to provide immediate assistance, but to build long-term capacity
-                    and resilience within our community.
-                  </p>
-
-                  <p className="mb-6 leading-relaxed">
-                    We believe in the power of kindness, service, and collective action. Through educational workshops,
-                    community events, resource sharing, and advocacy efforts, we work to create an environment where
-                    everyone can thrive. Our commitment extends beyond individual support to systemic change that
-                    addresses the root causes of inequality and exclusion.
-                  </p>
-
-                  <p className="leading-relaxed">
-                    As we continue to grow and evolve, QIDMA remains dedicated to our founding principles of compassion,
-                    integrity, and community empowerment. We invite you to join us in this important work as we build a
-                    stronger, more equitable Franklin for all.
+                    The idea for QIDMA was born from the shared vision of founders Viq Pervaaz and Sara Khan Didehvar, both of whom were raised in Franklin Township and felt a deep sense of responsibility to give back to the community that shaped them. Rooted in the Islamic principles of service (khidma) and charity (sadaqah), they were inspired to turn these core values into action. QIDMA began as a grassroots effort to uplift local residents and has already led several impactful initiatives, including a meaningful collaboration with the Franklin Food Bank to support families facing food insecurity.
                   </p>
                 </div>
               </CardContent>
@@ -102,15 +77,17 @@ export default function AboutPage() {
                 <Card key={index} className="bg-background text-center">
                   <CardContent className="p-8">
                     <Avatar className="h-24 w-24 mx-auto mb-4">
-                      <AvatarImage
-                        src={
-                          member.name === "Ayesha Ali" 
-                            ? "/images/ayesha_ali_profile.png" 
-                            : member.name === "Rana Jawad"
-                            ? "/images/rana_jawad.jpeg"
-                            : `/smiling-woman-curly-brown-hair-headshot.png?height=96&width=96&query=professional headshot of ${member.name}`
-                        }
-                      />
+                        <AvatarImage
+                          src={
+                            member.name === "Ayeshah Ali" 
+                              ? "/images/ayesha_ali_profile.png" 
+                              : member.name === "Rana Jawad"
+                              ? "/images/rana_jawad.jpeg"
+                              : member.name === "Samina Sattar"
+                              ? "/images/Samina_Sattar.jpeg"
+                              : `/smiling-woman-curly-brown-hair-headshot.png?height=96&width=96&query=professional headshot of ${member.name}`
+                          }
+                        />
                       <AvatarFallback className="text-lg bg-primary text-primary-foreground">
                         {member.initials}
                       </AvatarFallback>
