@@ -25,3 +25,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# added by laptop backup (secrets / large / generated files)
+.DS_Store
